@@ -10,7 +10,7 @@ jobs:
       output2: ${{ steps.test_project.outputs.test_output }}
     steps:
     - name: Checkout 
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: build_project
       run: |
         echo "build_id=$GITHUB_JOB"
